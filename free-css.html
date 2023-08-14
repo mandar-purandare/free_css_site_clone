@@ -155,28 +155,22 @@
             display: flex;
         }
 
-        #section-three-left-div{
-            width: 65%;
-            height: 100%;
-            /* border: 1px solid black; */
-        }
-
-        #section-three-left-div > div:nth-child(1){
+        .section-three-heading{
             margin-top: 15px;
-            display: flex;
+            background-color: rgb(240,240,240);
             color: rgb(102,102,102);
         }
 
-        #section-three-left-div > div:nth-child(1) > h3{
-            width: 45%;
-            font-size: 1em;
+        .section-three-heading-span{
+            background-color: white;
+            padding-right: 15px;
+            padding-bottom: 1px;
+            padding-left: 10px;
         }
 
-        #section-three-left-div > div:nth-child(1) > div{
-            margin-left: 1%;
-            background-color: rgb(240,240,240);
-            /* width: 44.8%; */
-            width: 55%;
+        #section-three-left-div{
+            width: 65%;
+            height: 100%;
             /* border: 1px solid black; */
         }
 
@@ -197,11 +191,21 @@
             /* border: 1px solid black; */
             display: flex;
             justify-content: space-between;
+            padding-left: 10px;
+            flex-wrap: wrap;
         }
 
-        .social-media-icon-box{
+        /* .social-media-icon-box{
             height: 80%;
             width: 15%;
+            margin: 2% 0%;
+            border: 1px solid black;
+            border-radius: 0.5em;
+        } */
+
+        .social-media-icon-box{
+            height: 50px;
+            width: 50px;
             margin: 2% 0%;
             border: 1px solid black;
             border-radius: 0.5em;
@@ -210,6 +214,7 @@
         #section-three-left-div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
             width: 100%;
             height: 80%;
+            padding-left: 10px;
             /* border: 1px solid black; */
         }
 
@@ -314,21 +319,6 @@
             /* border: 1px solid black; */
         }
 
-        #section-three-right-div > div:nth-child(1){
-            margin-top: 15px;
-            margin-left: 1em ;
-            display: flex;
-            color: rgb(102,102,102);
-        }
-
-        #section-three-right-div > div:nth-child(1) > div{
-            margin-left: 3%;
-            background-color: rgb(240,240,240);
-            /* width: 44.8%; */
-            width: 50%;
-            /* border: 1px solid black; */
-        }
-
         #section-three-right-div > div:nth-child(2) > div:nth-child(1){
             height: 16em;
             width: 95%;
@@ -346,7 +336,6 @@
             width: 8em;
             height: 8em;
             /* border: 1px solid black; */
-            /* margin-top: 2em; */
             margin: 2em 1em;
         }
 
@@ -369,29 +358,21 @@
         }
 
         @media screen and (max-width:975px) {
+        
             
-            #section-one, #section-two, #section-three {
+            #section-one, #section-two {
                 display: block;
             }
 
-            /* #section-three-left-div{
-                display: block;
-            } */
-
-            #section-three-left-div > div:nth-child(2){
-                background-color: green;
-                flex-direction: column;
+            #section-three{
+                width: 100%;
             }
 
-            #section-three-left-div > div:nth-child(2)
-
-            #section-three-right-small-imgs-div {
-                /* background-color: green; */
-                display: flex;
+            #section-three-right-small-imgs-div{
+                /* flex-wrap: wrap; */
                 flex-direction: column;
+                justify-content: center;
             }
-
-            
         }
         
     </style>
@@ -446,83 +427,83 @@
             </div>
         </section>
         <section id="section-three">
-            <div id="section-three-left-div">
-                <div>
-                    <h3>PHOTOSEC FREE CSS TEMPLATE</h3>
-                    <div></div>
-                </div>
-                <div>
+            
+                <div id="section-three-left-div">
+                    <div>
+                        <h3 class="section-three-heading"><span class="section-three-heading-span">PHOTOSEC FREE CSS TEMPLATE</span></h3>
+                    </div>
                     <div>
                         <div>
-                            <div class="social-media-icon-box">
-                                <i class="fa-brands fa-facebook-f fa-2x" style="margin-top: 0.25em; margin-left: 0.30em;"></i>
+                            <div>
+                                <div class="social-media-icon-box">
+                                    <i class="fa-brands fa-facebook-f fa-2x" style="margin-top: 0.25em; margin-left: 0.30em;"></i>
+                                </div>
+                                <div class="social-media-icon-box">
+                                    <i class="fa-brands fa-twitter fa-2x" style="color: #00acee; margin-top: 0.25em; margin-left: 0.30em;"></i>
+                                </div>
+                                <div class="social-media-icon-box">
+                                    <img src="./images/google-plus-xxl.png" style="height: 80%; width: 80%; margin-top: 10%; margin-left: 10%;">
+                                </div>
+                                <div class="social-media-icon-box">
+                                    <i class="fa-brands fa-reddit-alien fa-2x" style="color: #cee3f8; margin-top: 0.25em; margin-left: 0.30em;"></i>
+                                </div>
+                                <div class="social-media-icon-box">
+                                    <i class="fa-brands fa-stumbleupon fa-2x" style="color: #eb4924; margin-top: 0.25em; margin-left: 0.30em;"></i>
+                                </div>
                             </div>
-                            <div class="social-media-icon-box">
-                                <i class="fa-brands fa-twitter fa-2x" style="color: #00acee; margin-top: 0.25em; margin-left: 0.30em;"></i>
-                            </div>
-                            <div class="social-media-icon-box">
-                                <img src="./images/google-plus-xxl.png" style="height: 80%; width: 80%; margin-top: 10%; margin-left: 10%;">
-                            </div>
-                            <div class="social-media-icon-box">
-                                <i class="fa-brands fa-reddit-alien fa-2x" style="color: #cee3f8; margin-top: 0.25em; margin-left: 0.30em;"></i>
-                            </div>
-                            <div class="social-media-icon-box">
-                                <i class="fa-brands fa-stumbleupon fa-2x" style="color: #eb4924; margin-top: 0.25em; margin-left: 0.30em;"></i>
+                            <div>
+                                <img src="./images/photosec.jpg" style="height: 95%; width: 95%; border: 1px solid #cee3f8; border-radius: 5px; padding: 1%; margin: auto;">
                             </div>
                         </div>
                         <div>
-                            <img src="./images/photosec.jpg" style="height: 95%; width: 95%; border: 1px solid #cee3f8; border-radius: 5px; padding: 1%; margin: auto;">
+                            <ul id="section-three-ul-1">
+                                <li class="ul-bullet-1">HTML Design</li>
+                                <li class="ul-bullet-2">HTML 5</li>
+                                <li class="ul-bullet-3">Responsive, Mixed Columns</li>
+                                <li class="ul-bullet-4">Mixed</li>
+                                <li class="ul-bullet-5"><img src="./images/ul-5-li.png"></li>
+                                <li class="ul-bullet-6" style="color: #00acee;">Creative Commons</li>
+                                <li class="ul-bullet-7">17 July 2023</li>
+                            </ul>
                         </div>
                     </div>
                     <div>
-                        <ul id="section-three-ul-1">
-                            <li class="ul-bullet-1">HTML Design</li>
-                            <li class="ul-bullet-2">HTML 5</li>
-                            <li class="ul-bullet-3">Responsive, Mixed Columns</li>
-                            <li class="ul-bullet-4">Mixed</li>
-                            <li class="ul-bullet-5"><img src="./images/ul-5-li.png"></li>
-                            <li class="ul-bullet-6" style="color: #00acee;">Creative Commons</li>
-                            <li class="ul-bullet-7">17 July 2023</li>
+                        <ul id="section-three-ul-2">
+                            <li class="section-three-ul-2-bullet">Art or Photography,</li>
+                            <li>Bootstrap,</li>
+                            <li>jQuery,</li>
+                            <li>Portfolio,</li>
+                            <li>Services,</li>
+                            <li>Responsive</li>
                         </ul>
                     </div>
-                </div>
-                <div>
-                    <ul id="section-three-ul-2">
-                        <li class="section-three-ul-2-bullet">Art or Photography,</li>
-                        <li>Bootstrap,</li>
-                        <li>jQuery,</li>
-                        <li>Portfolio,</li>
-                        <li>Services,</li>
-                        <li>Responsive</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>DOWNLOAD</div>
-                    <div>LIVE DEMO</div>
-                </div>
-                <div>
-                    <div>  Hostit Template</div>
-                    <div>Templates</div>
-                    <div style="border-right: none;">-</div>
-                </div>
-            </div>
-            <div id="section-three-right-div">
-                <div>
-                    <h3>OUR SPONSORS</h3>
-                    <div></div>
-                </div>
-                <div>
                     <div>
-                        <img src="./images/section-three-right-img-1.gif" style="width: 100%; height: 100%;">
+                        <div>DOWNLOAD</div>
+                        <div>LIVE DEMO</div>
                     </div>
-                    <div id="section-three-right-small-imgs-div">
-                        <div>Advertise Here</div>
+                    <div>
+                        <div>  Hostit Template</div>
+                        <div>Templates</div>
+                        <div style="border-right: none;">-</div>
+                    </div>
+                </div>
+                <div id="section-three-right-div">
+                    <div>
+                        <h3 class="section-three-heading"><span class="section-three-heading-span">OUR SPONSORS</span></h3>
+                    </div>
+                    <div>
                         <div>
-                            <img src="./images/section-three-right-img-3.gif" style="width: 100%; height: 100%;">
+                            <img src="./images/section-three-right-img-1.gif" style="width: 100%; height: 100%;">
+                        </div>
+                        <div id="section-three-right-small-imgs-div">
+                            <div>Advertise Here</div>
+                            <div>
+                                <img src="./images/section-three-right-img-3.gif" style="width: 100%; height: 100%;">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
         <footer>
             <div>Copyright © 2007 - 2023 - Free CSS. All Rights Reserved</div>
